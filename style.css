@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100wv;
+    height: 100vh;
+    /* display: flex;  */
+    background-color: #000;
+    overflow: auto;
+}
+#nav{
+    width: 100%;
+    height: 10vh;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+#nav-1{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#nav-1 i{
+    font-size: 35px;
+}
+#nav-1 a{
+    
+    text-decoration: none;
+}
+#nav-2 {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    font-size: 25px;
+    font-weight: 100;
+}
+#nav-2 i{
+    font-size: 23px;
+    font-weight: 100;
+}
+#nav-2 h3{
+    font-size: 2vmax;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+}
+#page-1{
+    padding: 30px;  
+    width:100%;
+    height:calc(100% - 80px) ;
+    display: flex;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+#right{
+    width: 50%;
+    height: 100%;
+}
+
+#left #line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    border-right: .8px solid #fff;
+    /* text-align: end; */
+    padding: 400px 0px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#line h1{
+     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     rotate: 270deg;
+     text-transform: uppercase;
+}
+#left #center{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* width: calc(100% - 300px); */
+    width: 100%;
+    height: 100%;
+    /* background-color: #000; */
+    padding: 0 0 0 150px;
+}
+#center h1{
+  font-size: 4.5vmax;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+#center h2{
+    font-size: 3vmax;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-right: 20px 0; */
+    margin: 2vw 0 3vw 0;
+    text-transform: capitalize;
+}
+#center p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: gilroy;
+    width: 90%;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+#center button{
+    padding: 12px 30px;
+    font-family: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    border: 2px solid #fff;
+    margin-right: 20px;
+    color: #fff;
+    background-color: transparent;
+    /* border-radius: 20px; */
+}
+#center button:nth-child(2){
+    background-color: #fff;
+    color: #000;
+    font-weight: 900;
+}
+
+#right #img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+}
+img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+#right #line-2{
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border-left: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 0;
+    /* background-color: red; */
+}
+#line-2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    margin-left: 120px;
+}
+#circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    padding: 10px;
+    border: 2px solid #fff;
+}
+#circle #cir{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#cir{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cir i{
+    font-size: 19px;
+    color: #000;
+}
+@media (max-width:600px) {
+    #nav-1 a{
+       /* display: none; */
+       opacity: 0;
+    }
+    #nav-2 i{
+        /* display: none; */
+        opacity: 0;
+    }
+    #center{
+        padding: -10;
+    }
+    #nav-2 h3{
+        opacity: 1;
+    }
+    #line{
+       display: none;
+    }
+   
+}
